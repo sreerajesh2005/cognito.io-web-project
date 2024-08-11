@@ -1,0 +1,522 @@
+.frame-child {
+    height: 95px;
+    width: 1280px;
+    position: relative;
+    background-color: var(--color-black);
+    display: none;
+    max-width: 100%;
+  }
+  .home,
+  .nike {
+    
+    text-decoration: none;
+    position: relative;
+    color: inherit;
+    display: inline-block;
+    z-index: 1;
+    
+  }
+  .nike {
+    min-width: 114px;
+    white-space: nowrap;
+  }
+  .home {
+    min-width: 56px;
+    font-family: 'Courier New', Courier, monospace;
+  }
+  .home-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 3px 0 0;
+  }
+  .collection {
+    min-width: 95px;
+    font-family: 'Courier New', Courier, monospace;
+  }
+  .collection,
+  .join-us,
+  .sale {
+    text-decoration: none;
+    font-family: 'Courier New', Courier, monospace;
+    position: relative;
+    color: inherit;
+    display: inline-block;
+    cursor: pointer;
+    z-index: 1;
+  }
+  .join-us {
+    min-width: 67px;
+    white-space: nowrap;
+  }
+  .sale {
+    min-width: 39px;
+  }
+  .frame-group,
+  .navigation-inner {
+    display: flex;
+    align-items: flex-start;
+  }
+  .frame-group {
+    align-self: stretch;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: var(--gap-xl);
+  }
+  .Btn {
+    width: 100px;
+    height: 45px;
+    display:contents;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background-color: transparent;
+    position: relative;
+    /* overflow: hidden; */
+    border-radius: 7px;
+    cursor: pointer;
+    transition: all .3s;
+  }
+  
+  .svgContainer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: transparent;
+    letter-spacing: 0.8px;
+    border-radius: 44px;
+    transition: all .3s;
+    border: 1px solid rgba(156, 156, 156, 0.466);
+  }
+  
+  .BG {
+    position: absolute;
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: #f09433;
+    background: -moz-linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
+    background: -webkit-linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+    background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f09433', endColorstr='#bc1888',GradientType=1 );
+    z-index: -1;
+    border-radius: 9px;
+    pointer-events: none;
+    transition: all .3s;
+  }
+  
+  .Btn:hover .BG {
+    transform: rotate(35deg);
+    transform-origin: bottom;
+  }
+  
+  .Btn:hover .svgContainer {
+    background-color: rgba(156, 156, 156, 0.466);
+  }
+  
+  .navigation-inner {
+    flex: 1;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 0 0 var(--padding-xs);
+    box-sizing: border-box;
+    max-width: 100%;
+  }
+  .navigation-child {
+    align-self: stretch;
+    width: 168px;
+    position: relative;
+    border-radius: var(--br-25xl);
+    background-color: var(--color-gainsboro-100);
+    cursor: pointer;
+    z-index: 1;
+  }
+  .navigation,
+  .rectangle-parent {
+    display: flex;
+    flex-direction: row;
+    max-width: 100%;
+  }
+  .navigation {
+    height: 54px;
+    width: 787px;
+    align-items: flex-end;
+    justify-content: flex-start;
+    gap: 149px;
+    font-size: var(--font-size-xl);
+    font-family: var(--font-inter);
+  }
+  .rectangle-parent {
+    align-self: stretch;
+    background-color: var(--color-black);
+    align-items: flex-start;
+    justify-content: space-between;
+    padding: 21px 26px 14px 54px;
+    box-sizing: border-box;
+    top: 0;
+    z-index: 99;
+    position: sticky;
+    gap: var(--gap-xl);
+    text-align: left;
+    font-size: 48px;
+    color: var(--color-white);
+    font-family: var(--font-orbitron);
+  }
+  .air-jordan-logo-png-vector-ep {
+    width: 36px;
+    height: 34px;
+    position: relative;
+    object-fit: cover;
+    cursor: pointer;
+  }
+  .jordan {
+    margin: 0;
+    position: relative;
+    font-size: inherit;
+    font-weight: 50;
+    font-family: inherit;
+  }
+  .brand-name {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: 0 0 0 5px;
+  }
+  .and-markets-its,
+  .is-widely-credited,
+  .the-brand-has,
+  .the-high-prices {
+    margin: 0;
+  }
+  .the-brand-has-container {
+    height: 100px;
+    position: relative;
+    font-size: var(--font-size-lg);
+    font-family: var(--font-open-sans-hebrew);
+    display: inline-block;
+    max-width: 100%;
+  }
+  .brand-history,
+  .jordan-brand-description {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    max-width: 100%;
+  }
+  .brand-history {
+    gap: 27px;
+  }
+  .jordan-brand-description {
+    padding: var(--padding-smi) 0 0;
+    box-sizing: border-box;
+    min-width: 520px;
+  }
+  .logos-child,
+  .swoosh-nike-jumpman-logo-cloth-icon {
+    position: absolute;
+    top: 0;
+    left: 5px;
+    width: 134px;
+    height: 70px;
+    object-fit: cover;
+  }
+  .logos-child {
+    top: 52px;
+    left: 0;
+    border-radius: 38px;
+    width: 592.2px;
+    height: 289.5px;
+    object-fit: contain;
+  }
+  .nike-just-do-it-removebg-prev-icon {
+    position: absolute;
+    top: 52px;
+    left: 68px;
+    width: 456px;
+    height: 272px;
+    object-fit: cover;
+    z-index: 1;
+  }
+  .logos {
+    height: 341.5px;
+    flex: 1;
+    position: relative;
+    min-width: 385px;
+    max-width: 100%;
+  }
+  .hero-description,
+  .hero-description-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    max-width: 100%;
+  }
+  .hero-description {
+    flex: 1;
+    justify-content: flex-start;
+    gap: 8px;
+  }
+  .hero-description-wrapper {
+    align-self: stretch;
+    justify-content: flex-end;
+    padding: 0 17px 0 0;
+    box-sizing: border-box;
+  }
+  .air-jordan-logo-png-vector-ep-parent {
+    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-start;
+    gap: var(--gap-base);
+    max-width: 100%;
+  }
+  .input-group {
+    display: flex;
+    align-items: center;
+  }
+  
+  .input {
+    min-height: 50px;
+    max-width: 150px;
+    padding: 0 1rem;
+    color: #fff;
+    font-size: 15px;
+    border: 1px solid #000000;
+    border-radius: 6px 0 0 6px;
+    background-color: transparent;
+  }
+  
+  .button--submit {
+    min-height: 50px;
+    padding: .5em 1em;
+    border: none;
+    border-radius: 0 6px 6px 0;
+    background-color: #000000;
+    color: #fff;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background-color .3s ease-in-out;
+  }
+  
+  .button--submit:hover {
+    background-color: #000000;
+  }
+  
+  .input:focus, .input:focus-visible {
+    border-color: #3898EC;
+    outline: none;
+  }
+  
+  .content,
+  .email-signup,
+  .frame-container,
+  .frame-parent {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    max-width: 100%;
+  }
+  .frame-container {
+    flex: 1;
+    flex-direction: column;
+    gap: 48.5px;
+  }
+  .content,
+  .frame-parent {
+    box-sizing: border-box;
+  }
+  .content {
+    width: 1268px;
+    flex-direction: row;
+    padding: 0 65px;
+  }
+  .frame-parent {
+    align-self: stretch;
+    flex-direction: column;
+    padding: 0 0 128px;
+    gap: 32px;
+    text-align: left;
+    font-size: 128px;
+    color: var(--color-black);
+    font-family: var(--font-orbitron);
+  }
+  .product-grid-child {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    margin: 0 !important;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    border-radius: var(--br-58xl);
+    background-color: var(--color-black);
+  }
+  .frame-item {
+    width: 304px;
+    height: 368px;
+    position: relative;
+    border-radius: var(--br-25xl);
+    background-color: var(--color-gainsboro-100);
+    display: none;
+  }
+  .air-jordan-1,
+  .also-includes-all,
+  .blank-line,
+  .duties,
+  .incl-of-taxes,
+  .mens-shoes,
+  .mrp {
+    margin: 0;
+  }
+  .
+  @media screen and (max-width: 1200px) {
+    .product-grid {
+      flex-wrap: wrap;
+    }
+    .footer,
+    .travis-scott-grid-wrapper {
+      padding-left: var(--padding-15xl);
+      padding-right: var(--padding-15xl);
+      box-sizing: border-box;
+    }
+    .footer {
+      gap: 38px;
+      padding-left: var(--padding-11xl);
+      padding-right: var(--padding-11xl);
+    }
+  }
+  @media screen and (max-width: 1050px) {
+    .frame-group {
+      display: none;
+    }
+    .navigation {
+      gap: 74px;
+    }
+    .jordan {
+      font-size: 51px;
+    }
+    .jordan-brand-description {
+      flex: 1;
+    }
+    .hero-description {
+      flex-wrap: wrap;
+    }
+    .travis-scott-grid-inner {
+      flex: 1;
+    }
+    .travis-scott-x1 {
+      font-size: var(--font-size-10xl);
+    }
+    .frame-parent2,
+    .frame-parent3 {
+      flex: 1;
+    }
+    .travis-scott-grid {
+      flex-wrap: wrap;
+    }
+    .nike1 {
+      font-size: var(--font-size-10xl);
+    }
+    .footer {
+      flex-wrap: wrap;
+    }
+  }
+  @media screen and (max-width: 750px) {
+    .rectangle-parent {
+      padding-left: 27px;
+      box-sizing: border-box;
+    }
+    .jordan-brand-description,
+    .logos {
+      min-width: 100%;
+    }
+    .signup-form {
+      flex-wrap: wrap;
+      padding-left: var(--padding-24xl);
+      box-sizing: border-box;
+    }
+    .frame-container {
+      gap: 24px;
+    }
+    .content {
+      padding-left: var(--padding-13xl);
+      padding-right: var(--padding-13xl);
+      box-sizing: border-box;
+    }
+    .frame-parent {
+      gap: var(--gap-base);
+      padding-bottom: 83px;
+      box-sizing: border-box;
+    }
+    .product-grid {
+      padding-left: var(--padding-15xl);
+      padding-right: var(--padding-24xl);
+      box-sizing: border-box;
+    }
+    .frame-parent2,
+    .travis-scott-grid-inner {
+      min-width: 100%;
+    }
+    .product-grid-parent {
+      gap: 33px;
+    }
+    .footer {
+      gap: 19px;
+    }
+    .macbook-air-1 {
+      gap: var(--gap-xl);
+    }
+  }
+  @media screen and (max-width: 450px) {
+    .navigation {
+      gap: var(--gap-18xl);
+    }
+    .jordan {
+      font-size: 32px;
+    }
+    .signup-form {
+      padding-left: var(--padding-xl);
+      box-sizing: border-box;
+    }
+    .frame-div,
+    .product-grid,
+    .rectangle-group {
+      padding-top: var(--padding-6xl);
+      box-sizing: border-box;
+    }
+    .rectangle-group {
+      gap: 18px;
+      padding-bottom: 24px;
+    }
+    .frame-div,
+    .product-grid {
+      padding-bottom: var(--padding-xl);
+    }
+    .product-grid {
+      padding-top: var(--padding-xl);
+      padding-right: var(--padding-xl);
+    }
+    .frame-parent1 {
+      gap: 105px;
+    }
+    .travis-scott-x1 {
+      font-size: var(--font-size-3xl);
+    }
+    .frame-parent2 {
+      gap: 112px;
+    }
+    .product-grid-parent {
+      gap: var(--gap-base);
+    }
+    .nike1 {
+      font-size: var(--font-size-3xl);
+    }
+  }
+  
